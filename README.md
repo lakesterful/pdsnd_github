@@ -17,12 +17,12 @@ The Bikeshare Project is the second part in Udacity's Nanodegree "Programming fo
 * End Station (e.g., Sedgwick St & North Ave)
 * User Type (Subscriber or Customer)
 
-### The Chicago and New York City files also have the following two columns:
+The Chicago and New York City files also have the following two columns:
 
 * Gender
 * Birth Year
 
-The following statistics were computed:
+### The following statistics were computed:
 
 #1 Popular times of travel (i.e., occurs most often in the start time)
 
@@ -53,5 +53,10 @@ The following statistics were computed:
 * new_york_city.csv
 * washington.csv
 
-### Credits
+### Software Requirements
+* Python 3
+* NumPy
+* Pandas (Version: 0.22)
+
+### Acknowledgements and Credits
 Thanks for Udacity for providing helpful information and guidance in order to learn Python.
