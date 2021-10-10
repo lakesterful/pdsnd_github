@@ -15,35 +15,29 @@ def get_filters():
         (str) month - name of the month to filter by, or "all" to apply no month filter
         (str) day - name of the day of week to filter by, or "all" to apply no day filter
     """
-    print('Hello! Let\'s explore some US bikeshare data!')
+    print('Hello! Let\'s explore some US bikeshare data!\n')
     # TO DO: get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
 
-    city = input('Please choose one of the following cities: chicago, new york city, washington: ')
-    city = city.lower()
+    city = input('Please choose one of the following cities: \n chicago, new york city, washington: ').lower()
 
     while city not in CITY_DATA.keys():
-        city = input('Something went wrong. Please enter one of the following cities: \n chicago, new york city, washington \n')
-        city = city.lower()
+        city = input('Something went wrong. Please enter one of the following cities: \n chicago, new york city, washington \n').lower()
 
     print('You have chosen {}'.format(city))
 
     # TO DO: get user input for month (all, january, february, ... , june)
-    month = input('Please choose \'all\' or one of the following months: january, february, march, april, may, june: ')
-    month = month.lower()
+    month = input('Please choose \'all\' or one of the following months: january, february, march, april, may, june: ').lower()
 
     while month not in ['all','january', 'february', 'march', 'april', 'may', 'june']:
-        month = input('Something went wrong. Please enter one of the following months: \n all, january, february, march, april, may, june:\n')
-        month = month.lower()
+        month = input('Something went wrong. Please enter one of the following months: \n all, january, february, march, april, may, june:\n').lower()
 
     print('You have chosen {}'.format(month))
 
     # TO DO: get user input for day of week (all, monday, tuesday, ... sunday)
-    day = input('Please choose \'all\' or one of the following day: monday, tuesday, wednesday, thursday, friday, saturday, sunday: ')
-    day = day.lower()
+    day = input('Please choose \'all\' or one of the following day: monday, tuesday, wednesday, thursday, friday, saturday, sunday: ').lower()
 
     while day not in ['all', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday']:
-        day = input('Something went wront. Please enter one of the following days: \n all, monday, tuesday, wednesday, thursday, friday, saturday, sunday\n')
-        day.lower()
+        day = input('Something went wront. Please enter one of the following days: \n all, monday, tuesday, wednesday, thursday, friday, saturday, sunday\n').lower()
 
 
     print('You have chosen {}'.format(day))
