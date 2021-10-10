@@ -25,7 +25,7 @@ def get_filters():
         city = input('Something went wrong. Please enter one of the following cities: \n chicago, new york city, washington \n')
         city = city.lower()
 
-    print('You have chosen ',city)
+    print('You have chosen {}'.format(city))
 
     # TO DO: get user input for month (all, january, february, ... , june)
     month = input('Please choose \'all\' or one of the following months: january, february, march, april, may, june: ')
@@ -35,18 +35,18 @@ def get_filters():
         month = input('Something went wrong. Please enter one of the following months: \n all, january, february, march, april, may, june:\n')
         month = month.lower()
 
-    print('You have chosen ', month)
+    print('You have chosen {}'.format(month))
 
     # TO DO: get user input for day of week (all, monday, tuesday, ... sunday)
     day = input('Please choose \'all\' or one of the following day: monday, tuesday, wednesday, thursday, friday, saturday, sunday: ')
     day = day.lower()
 
     while day not in ['all', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday']:
-        day = input('Something went wront. Please enter one of the following days: \n all, mon, tue, wed, thu, fri, sat, sun\n')
+        day = input('Something went wront. Please enter one of the following days: \n all, monday, tuesday, wednesday, thursday, friday, saturday, sunday\n')
         day.lower()
 
 
-    print('You have chosen ', day)
+    print('You have chosen {}'.format(day))
 
 
     print('-'*40)
@@ -128,7 +128,7 @@ def station_stats(df):
     # TO DO: display most frequent combination of start station and end station trip
     df['start_to_end'] = 'Start Station' + ' ' + 'End Station'
     frequent_route = df['start_to_end'].mode()[0]
-    print('The most frequent combination of start station and end station trip: {}'.(frequent_route))
+    print('The most frequent combination of start station and end station trip: {}'.format(frequent_route))
 
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
